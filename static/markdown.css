@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #687FE5;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgb(79 70 229 / 0.3);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  user-select: none;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 64px); /* adjust for header */
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  margin: 1rem 2rem;
+  overflow: hidden;
+  background: white;
+}
+
+textarea,
+#html-preview {
+  width: 50%;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  height: 100%;
+  overflow-y: auto;
+  resize: none;
+  transition: background-color 0.3s ease;
+}
+
+#markdown {
+  border-right: 1px solid #e0e0e0;
+  font-family: 'Source Code Pro', monospace, monospace;
+  color: #1e293b;
+  background-color: #fefefe;
+}
+
+#markdown:focus {
+  background-color: #fff;
+  box-shadow: inset 0 0 8px #6366f1;
+}
+
+#html-preview {
+  background-color: #fafafa;
+  color: #1f2937;
+  padding-left: 2.5rem;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+}
+
+pre {
+  background: #f3f4f6;
+  color: #111827;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  font-family: 'Source Code Pro', monospace, monospace;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+code {
+  background: #e5e7eb;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Source Code Pro', monospace, monospace;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.codehilite {
+  background: none !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+.codehilite .language {
+  display: none !important;
+}
