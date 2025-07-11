@@ -40,7 +40,7 @@ cd markdown-to-html
 
 3.Install Requirements
 ```bash
-pip install requirements.txt
+pip -r install requirements.txt
 ```
 
 4.Run the Flask application:
